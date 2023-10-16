@@ -5,7 +5,7 @@ export const Card = ({item}) => {
   const imgUrl = "http://localhost:1337";
 
   return (
-    <Link to={`/product/${item.id}`}>
+    <Link className="link" to={`/product/${item.id}`}>
       <div className="card">
         <div className="image">
           {item?.attributes.isNew && <span>New Season</span>}
@@ -17,6 +17,7 @@ export const Card = ({item}) => {
           <h3>${item?.oldPrize || item?.attributes.price + 25}</h3>
           <h3>${item?.attributes.price}</h3>
         </div>
+        <button className="add-to-cart-button">Add to Cart</button>
       </div>
     </Link>
   )

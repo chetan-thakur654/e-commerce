@@ -46,21 +46,36 @@
 
    h2{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .prices{
     display: flex;
-    gap: 20px;
+    gap: 12px;
 
     h3{
-      font-size: 18px;
-      font-weight: 500;
+      font-size: 25px;
+      font-weight: 800;
 
       &:first-child{
         color: gray;
         text-decoration: line-through;
       }
+    }
+  }
+
+  .add-to-cart-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2879fe;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darkcyan;
     }
   }
 }

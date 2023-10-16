@@ -43,7 +43,6 @@ export const Footer = () => {
           <div className="right">
             <img src="" alt="payment"/>
           </div>
-          
         </div>
       </div>
     </>
